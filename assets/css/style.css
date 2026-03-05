@@ -191,3 +191,79 @@ body.body {
         font-size: 26px;
     }
 }
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    background: #212529;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #adb5bd;
+}
