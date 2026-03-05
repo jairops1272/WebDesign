@@ -52,11 +52,16 @@ body.body {
 /* ============================= */
 
 .form-card {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
+    background: rgba(255, 255, 255, 0.35); /* transparencia */
+    backdrop-filter: blur(10px); /* efecto vidrio */
+    -webkit-backdrop-filter: blur(10px); /* soporte Safari */
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 100px;
+
     padding: 40px; /* Box Model */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* ============================= */
@@ -193,4 +198,77 @@ body.body {
     .form-title {
         font-size: 24px;
     }
+}
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+
+    .form-card {
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 26px;
+    }
+
+    .form-subtitle {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Celulares grandes */
+@media screen and (max-width: 768px) {
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+
+}
+
+
+/* Celulares pequeños */
+@media screen and (max-width: 480px) {
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 12px;
+    }
+
 }
