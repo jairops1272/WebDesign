@@ -1,0 +1,145 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Contáctanos y Regístrate</title>
+</head>
+
+<body class="body">
+
+    <!-- Contenedor Principal -->
+    <main class="main-container">
+
+        <!-- Sección Hero / Fondo -->
+        <section class="contact-section">
+
+            <!-- Overlay -->
+            <div class="overlay">
+
+                <!-- Contenedor del formulario -->
+                <article class="form-card">
+
+                    <!-- Encabezado -->
+                    <header class="form-header">
+                        <h1 class="form-title">Contáctanos y regístrate</h1>
+                        <p class="form-subtitle">
+                            Déjanos tus datos y nos comunicaremos contigo pronto.
+                        </p>
+                    </header>
+
+                    <!-- Formulario -->
+                    <form class="contact-form" action="#" method="post">
+
+                        <!-- Fila 1 -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">
+                                    Nombre Completo
+                                </label>
+                                <div class="input-box">
+                                    <input 
+                                        type="text" 
+                                        id="nombre" 
+                                        name="nombre" 
+                                        class="form-input"
+                                        placeholder="Ej. Ana Pérez García"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="correo" class="form-label">
+                                    Correo Electrónico
+                                </label>
+                                <div class="input-box">
+                                    <input 
+                                        type="email" 
+                                        id="correo" 
+                                        name="correo" 
+                                        class="form-input"
+                                        placeholder="ana1@ejemplo.com"
+                                        required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Fila 2 -->
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">
+                                    Número de Teléfono
+                                </label>
+                                <div class="input-box">
+                                    <input 
+                                        type="tel" 
+                                        id="telefono" 
+                                        name="telefono" 
+                                        class="form-input"
+                                        placeholder="+52 7717171711">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto" class="form-label">
+                                    Asunto
+                                </label>
+                                <div class="input-box">
+                                    <select 
+                                        id="asunto" 
+                                        name="asunto" 
+                                        class="form-select"
+                                        required>
+                                        <option value="" disabled selected>
+                                            Selecciona el motivo
+                                        </option>
+                                        <option value="informacion">Información</option>
+                                        <option value="cotizacion">Cotización</option>
+                                        <option value="soporte">Soporte</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="form-group full-width">
+                            <label for="mensaje" class="form-label">
+                                Mensaje
+                            </label>
+                            <div class="textarea-box">
+                                <textarea 
+                                    id="mensaje" 
+                                    name="mensaje" 
+                                    class="form-textarea"
+                                    placeholder="Escribe tu mensaje aquí"
+                                    rows="4"
+                                    required>
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <!-- Botón -->
+                        <div class="button-container">
+                            <button type="submit" class="submit-button">
+                                Enviar Mensaje
+                            </button>
+                        </div>
+
+                    </form>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
