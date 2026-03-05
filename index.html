@@ -1,27 +1,23 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Contáctanos y Regístrate</title>
 </head>
 
 <body class="body">
 
-    <!-- Contenedor Principal -->
     <main class="main-container">
 
-        <!-- Sección Hero / Fondo -->
         <section class="contact-section">
 
-            <!-- Overlay -->
             <div class="overlay">
 
-                <!-- Contenedor del formulario -->
                 <article class="form-card">
 
-                    <!-- Encabezado -->
                     <header class="form-header">
                         <h1 class="form-title">Contáctanos y regístrate</h1>
                         <p class="form-subtitle">
@@ -29,17 +25,14 @@
                         </p>
                     </header>
 
-                    <!-- Formulario -->
                     <form class="contact-form" action="#" method="post">
 
-                        <!-- Fila 1 -->
                         <div class="form-row">
 
                             <div class="form-group">
-                                <label for="nombre" class="form-label">
-                                    Nombre Completo
-                                </label>
+                                <label for="nombre" class="form-label">Nombre Completo</label>
                                 <div class="input-box">
+                                    <i class="fa-solid fa-user icon"></i>
                                     <input 
                                         type="text" 
                                         id="nombre" 
@@ -51,10 +44,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="correo" class="form-label">
-                                    Correo Electrónico
-                                </label>
+                                <label for="correo" class="form-label">Correo Electrónico</label>
                                 <div class="input-box">
+                                    <i class="fa-solid fa-envelope icon"></i>
                                     <input 
                                         type="email" 
                                         id="correo" 
@@ -67,14 +59,12 @@
 
                         </div>
 
-                        <!-- Fila 2 -->
                         <div class="form-row">
 
                             <div class="form-group">
-                                <label for="telefono" class="form-label">
-                                    Número de Teléfono
-                                </label>
+                                <label for="telefono" class="form-label">Número de Teléfono</label>
                                 <div class="input-box">
+                                    <i class="fa-solid fa-phone icon"></i>
                                     <input 
                                         type="tel" 
                                         id="telefono" 
@@ -85,18 +75,11 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="asunto" class="form-label">
-                                    Asunto
-                                </label>
+                                <label for="asunto" class="form-label">Asunto</label>
                                 <div class="input-box">
-                                    <select 
-                                        id="asunto" 
-                                        name="asunto" 
-                                        class="form-select"
-                                        required>
-                                        <option value="" disabled selected>
-                                            Selecciona el motivo
-                                        </option>
+                                    <i class="fa-solid fa-circle-info icon"></i>
+                                    <select id="asunto" name="asunto" class="form-select" required>
+                                        <option value="" disabled selected>Selecciona el motivo</option>
                                         <option value="informacion">Información</option>
                                         <option value="cotizacion">Cotización</option>
                                         <option value="soporte">Soporte</option>
@@ -107,27 +90,23 @@
 
                         </div>
 
-                        <!-- Mensaje -->
                         <div class="form-group full-width">
-                            <label for="mensaje" class="form-label">
-                                Mensaje
-                            </label>
+                            <label for="mensaje" class="form-label">Mensaje</label>
                             <div class="textarea-box">
+                                <i class="fa-solid fa-comment-dots icon"></i>
                                 <textarea 
                                     id="mensaje" 
                                     name="mensaje" 
                                     class="form-textarea"
                                     placeholder="Escribe tu mensaje aquí"
                                     rows="4"
-                                    required>
-                                </textarea>
+                                    required></textarea>
                             </div>
                         </div>
 
-                        <!-- Botón -->
                         <div class="button-container">
                             <button type="submit" class="submit-button">
-                                Enviar Mensaje
+                                Enviar Mensaje <i class="fa-solid fa-paper-plane" style="margin-left: 10px;"></i>
                             </button>
                         </div>
 
